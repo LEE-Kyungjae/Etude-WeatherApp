@@ -1,6 +1,28 @@
 # WeatherApp
-FlutterApp 관련 유튜브채널 코딩셰프님의 강의를 보고 따라만든 WeatherApp입니다.
 
-## AppAction
+This is a simple weather app developed using Flutter, inspired by the YouTube tutorial from "Coding Chef."
 
-API를 취득하여 해당 GPS의 날씨정보를 얻어옵니다.
+## Features
+
+- Fetches weather information via API using GPS.
+- Displays real-time temperature and weather conditions.
+
+## Technologies Used
+
+- **Flutter**: Cross-platform framework.
+- **OpenWeather API**: For weather data.
+- **GPS**: Location-based weather updates.
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/LEE-Kyungjae/Etude-WeatherApp.git
+   cd Etude-WeatherApp
+2. Install dependencies:
+   ```bash
+   flutter pub get
+
+3. Run the app:
+   ```bash
+   flutter run
