@@ -70,13 +70,12 @@ class _LoadingState extends State<Loading> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: RaisedButton(
+        child: ElevatedButton(
           onPressed: null,
           child: Text(
             'Get my location',
             style: TextStyle(color: Colors.white),
           ),
-          color: Colors.blue,
         ),
       ),
     );
