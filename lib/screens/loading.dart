@@ -3,7 +3,9 @@ import 'package:lecture/data/my_location.dart';
 import 'package:lecture/data/network.dart';
 import 'package:lecture/screens/weather_screen.dart';
 
-const apiKey = '0d0cc1131b44cd6ea0027e60e69dc007';
+// OpenWeather API key, supplied at build time:
+//   flutter run --dart-define=OPENWEATHER_API_KEY=<your key>
+const apiKey = String.fromEnvironment('OPENWEATHER_API_KEY');
 
 class Loading extends StatefulWidget {
   @override
