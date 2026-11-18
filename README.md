@@ -19,10 +19,12 @@ This is a simple weather app developed using Flutter, inspired by the YouTube tu
    ```bash
    git clone https://github.com/LEE-Kyungjae/Etude-WeatherApp.git
    cd Etude-WeatherApp
-2. Install dependencies:
+   ```
+2. Install dependencies (the app predates null safety, so use Flutter 2.x, e.g. 2.10.5):
    ```bash
    flutter pub get
-
-3. Run the app:
+   ```
+3. Get a free API key from [OpenWeather](https://home.openweathermap.org/api_keys) and pass it at build time:
    ```bash
-   flutter run
+   flutter run --dart-define=OPENWEATHER_API_KEY=<your key>
+   ```
