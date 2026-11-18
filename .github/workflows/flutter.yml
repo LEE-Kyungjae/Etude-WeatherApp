@@ -1,0 +1,21 @@
+name: Flutter
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+jobs:
+  analyze-and-test:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v5
+      # The app predates null safety (sdk: ">=2.7.0 <3.0.0"), so it needs Flutter 2.x.
+      - uses: subosito/flutter-action@v2
+        with:
+          channel: stable
+          flutter-version: 2.10.5
+          cache: true
+      - run: flutter pub get
+      - run: flutter analyze
+      - run: flutter test
